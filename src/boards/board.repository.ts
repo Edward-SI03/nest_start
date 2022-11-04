@@ -8,6 +8,7 @@ export class BoardRepository extends Repository<Board> {
   async createBoard(createBoardDto: CreateBoardDto): Promise<Board> {
     const { title, description } = createBoardDto;
 
+    // 레포지토리 nest 버전이 달라서 적용x
     // const board = this.create({
     //   title,
     //   description,
